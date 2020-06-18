@@ -12,12 +12,31 @@ import android.widget.GridView;
 
 public class MainActivity extends Activity {
 
+    public void MyClick1 (View v)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+
+    }
+    public void MyClick2 (View v)
+    {
+        Intent i2 = new Intent(this, SecondActivity.class);
+        startActivity(i2);
+
+    }
+    public void MyClick3 (View v)
+    {
+        Intent i3 = new Intent(this, ThirdActivity.class);
+        startActivity(i3);
+
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridView gridView = (GridView) findViewById(R.id.grid_view);
+        GridView gridView = (GridView) findViewById(R.id.gridView1);
 
 
         gridView.setAdapter(new ImageAdapter(this));
@@ -30,7 +49,7 @@ public class MainActivity extends Activity {
 
 
                 Intent i = new Intent(getApplicationContext(), FullImageActivity.class);
-                
+
                 i.putExtra("id", position);
                 startActivity(i);
             }
