@@ -23,7 +23,7 @@
         android:layout_marginEnd="295dp"
         android:layout_marginBottom="27dp"
         android:layout_weight="1"
-        android:background="#33D4E435"
+        android:background="#F5F5F5"
         android:onClick="MyClick1"
         android:text="Home" />
 

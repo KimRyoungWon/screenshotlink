@@ -12,19 +12,19 @@ import android.widget.GridView;
 
 public class MainActivity extends Activity {
 
-    public void MyClick1 (View v)
+    public void MyClick1 (View v) //home 버튼
     {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
 
     }
-    public void MyClick2 (View v)
+    public void MyClick2 (View v) //folder 버튼
     {
         Intent i2 = new Intent(this, SecondActivity.class);
         startActivity(i2);
 
     }
-    public void MyClick3 (View v)
+    public void MyClick3 (View v) //link 버튼
     {
         Intent i3 = new Intent(this, ThirdActivity.class);
         startActivity(i3);
