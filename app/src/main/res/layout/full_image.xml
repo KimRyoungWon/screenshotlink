@@ -1,30 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:linksClickable="true"
+    android:autoLink="all"
+    tools:context=".FullImageActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="198dp"
+        android:layout_height="237dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="122dp" />
 
     <ImageView
         android:id="@+id/full_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="555dp"
+        android:layout_width="409dp"
+        android:layout_height="480dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="123dp"
         android:layout_weight="3" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-2dp"
         android:layout_weight="3"
         android:background="#33D4E435"
-        android:text="click" />
+        android:text="click"
+        android:onClick="onButtonClick"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/linktext"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="65dp"
+        android:background="#56E3E3E3"
+        android:ems="10"
+        android:inputType="textUri"
+        android:textSize="24sp"
+        android:hint="Link"
+       />
 
 </RelativeLayout>
