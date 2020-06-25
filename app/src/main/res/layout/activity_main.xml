@@ -16,42 +16,33 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="295dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
-        android:background="#33D4E435"
+        android:background="#C1B0D881"
         android:onClick="MyClick1"
         android:text="Home" />
 
     <Button
         android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
-        android:background="#33D4E435"
+        android:background="#C1B0D881"
         android:onClick="MyClick2"
-        android:text="Folder" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="27dp"
-        android:layout_weight="1"
-        android:background="#33D4E435"
-        android:onClick="MyClick3"
-        android:text="Link" />
+        android:text="Memo" />
 
 
 </RelativeLayout>

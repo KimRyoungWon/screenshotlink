@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="사진">
+        <item>전체</item>
+        <item>음식</item>
+        <item>패션</item>
+        <item>풍경</item>
+        <item>인물</item>
+        <item>기타</item>
+    </string-array>
+</resources>

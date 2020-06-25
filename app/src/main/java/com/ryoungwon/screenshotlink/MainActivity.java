@@ -18,16 +18,11 @@ public class MainActivity extends Activity {
         startActivity(i);
 
     }
-    public void MyClick2 (View v) //folder 버튼
-    {
-        Intent i2 = new Intent(this, SecondActivity.class);
-        startActivity(i2);
 
-    }
-    public void MyClick3 (View v) //link 버튼
+    public void MyClick2 (View v) //link 버튼
     {
-        Intent i3 = new Intent(this, ThirdActivity.class);
-        startActivity(i3);
+        Intent i2 = new Intent(this, ThirdActivity.class);
+        startActivity(i2);
 
     }
 

@@ -6,54 +6,140 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="34dp"
-        android:text="Link"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="295dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
-        android:background="#33D4E435"
+        android:background="#C1B0D881"
         android:onClick="MyClick1"
         android:text="Home" />
 
     <Button
         android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
-        android:background="#33D4E435"
+        android:background="#C1B0D881"
         android:onClick="MyClick2"
-        android:text="Folder" />
+        android:text="Memo" />
+
+    <TextView
+        android:id="@+id/dateNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="날짜"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="2dp"
+        android:background="#11FFEB3B"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:background="#00FFFFFF"
+        android:gravity="top|start"
+        />
+
+    <TextView
+        android:id="@+id/baro"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="360dp"
+        android:background="#CDDC39" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="730dp"
+        android:layout_toStartOf="@+id/SimpleView"
+        android:gravity="center"
+        android:text="카테고리 선택"
+        android:textColor="#105313"
+        android:textSize="18sp"
+        tools:ignore="UnknownId" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/photobtn"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="27dp"
-        android:layout_weight="1"
-        android:background="#33D4E435"
-        android:onClick="MyClick3"
-        android:text="Link" />
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="#00FFFFFF"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:text="photo"
+        tools:ignore="InvalidId,UnknownId" />
+
+    <ImageView
+        android:id="@+id/SimpleView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="#27CDDC39"
+        tools:ignore="InvalidId,UnknownId" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="220dp"
+        android:background="#0FCDDC39"
+        android:entries="@array/사진"
+        android:gravity="center|center_horizontal"
+        android:textAlignment="center"
+        tools:ignore="UnknownId" />
 
 </RelativeLayout>

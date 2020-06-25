@@ -13,9 +13,11 @@
         android:layout_width="198dp"
         android:layout_height="237dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="104dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="109dp"
         android:layout_marginBottom="122dp" />
 
@@ -40,9 +42,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-2dp"
         android:layout_weight="3"
-        android:background="#33D4E435"
+        android:background="#C1B0D881"
+        android:onClick="onClick"
         android:text="click"
-        android:onClick="onButtonClick"
         tools:ignore="OnClick" />
 
     <EditText
